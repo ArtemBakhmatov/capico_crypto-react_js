@@ -1,3 +1,9 @@
+Установка: npx create-react-app . (точка означает без названия проекта в текущую папку)
+Запуск проекта: npm start
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
