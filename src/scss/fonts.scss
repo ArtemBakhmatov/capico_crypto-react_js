@@ -1,0 +1,45 @@
+@font-face {
+    font-family: 'Nekst';
+    src: local('../assets/fonts/Nekst Light'), local('Nekst-Light'),
+        url('../assets/fonts/Nekst-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nekst Semi';
+    src: local('../assets/fonts/Nekst Semi Bold'), local('Nekst-SemiBold'),
+        url('../assets/fonts/Nekst-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nekst';
+    src: local('../assets/fonts/Nekst Medium'), local('Nekst-Medium'),
+        url('../assets/fonts/Nekst-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nekst';
+    src: local('../assets/fonts/Nekst'), local('Nekst-Regular'),
+        url('../assets/fonts/Nekst-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: local('../assets/fonts/SF Pro Display Light'), local('SFProDisplay-Light'),
+        url('../assets/fonts/SFProDisplay-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+

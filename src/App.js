@@ -1,5 +1,12 @@
+import Footer from './components/footer/Footer';
+import Header from './components/header/Header';
+import './scss/style.scss';
+
 const App = () => (
-	<h1>Привет Мир</h1>
+	<>
+		<Header />
+		<Footer />
+	</>
 );
 
 export default App;

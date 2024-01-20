@@ -1,0 +1,121 @@
+.footer {
+    background-color: var(--bg_footer);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 40px 0 60px 0;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__block {
+        position: relative;
+        &:last-child {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    &__text {
+        font-family: 'Nekst', sans-serif;
+        font-size: 17px;
+        color: var(--grey_color_footer);
+        &-copyright {
+            position: absolute;
+            bottom: 0;
+        }
+    }
+    &__mail {
+        font-family: 'Nekst', sans-serif;
+        font-size: 17px;
+        color: var(--white);
+        text-decoration: none;
+        position: absolute;
+        bottom: 0;
+    }
+    &__title {
+        font-family: 'Nekst', sans-serif;
+        font-weight: 500;
+        font-size: 23px;
+        color: var(--white);
+        margin-bottom: 20px;
+        &-link {
+            text-decoration: none;
+        }
+    }
+    &__list {
+        width: 200px;
+        list-style-type: none;
+    }
+    &__item {
+        margin-top: 10px;
+    }
+    &__link {
+        font-family: 'Nekst', sans-serif;
+        font-weight: 400;
+        font-size: 13px;
+        color: var(--grey_color_footer);
+        text-decoration: none;
+        transition: all 0.3s ease;
+        &:hover {
+            color: var(--white)
+        }
+    }
+    &__socialList {
+        list-style-type: none;
+        display: flex;
+        margin-top: 30px;
+    }
+    &__socialItem {
+        margin-right: 10px;
+        position: relative;
+        &:nth-child(3) {
+            &::before {
+                position: absolute;
+                content: 'Chat';
+                color: var(--white);
+                font-family: 'Nekst', sans-serif;
+                font-weight: 500;
+                font-size: 10px;
+                text-transform: none;
+                top: 50px;
+                right: 10px;
+            }
+        }
+        &:nth-child(4) {
+            &::before {
+                position: absolute;
+                content: 'Channel';
+                font-family: 'Nekst', sans-serif;
+                font-weight: 500;
+                color: #8950E7;
+                font-size: 10px;
+                text-transform: none;
+                top: 50px;
+            }
+            .footer__socialSvg {
+                &:hover {
+                    path {
+                        fill: var(--white);
+                    }
+                    // тут hover пока не работает, потом сделаю через логику
+                    // .footer__socialItem {
+                    //     &::before {
+                    //         color: var(--white);
+                    //     }
+                    // }
+                }
+            }
+        }
+    }
+    &__socialSvg {
+        path {
+            transition: all 0.3s ease;
+        }
+        
+        &:hover {
+            path {
+                fill: #8950E7;
+            }
+        }
+    }
+}

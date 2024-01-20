@@ -1,0 +1,43 @@
+.nav {
+    &__list {
+        display: flex;
+        list-style-type: none;
+    }
+    &__item {
+        margin: 0 4px;
+        &:last-child {
+            .nav__link {
+                position: relative;
+                pointer-events: none;
+                color: var(--gray_lightSuper);
+                &::before {
+                    position: absolute;
+                    content: 'Скоро';
+                    color: var(--white);
+                    font-size: 12px;
+                    text-transform: none;
+                    letter-spacing: normal;
+                    border-radius: 8px;
+                    border: 1px solid var(--violet_light);
+                    padding: 5px;
+                    top: -20px;
+                    right: -10px;
+                }
+            }
+        }
+    }
+    &__link {
+        padding: 0 10px;
+        font-family: 'Nekst', sans-serif;
+        font-size: 23px;
+        font-weight: 500;
+        text-decoration: none;
+        color: var(--white);
+        letter-spacing: 1px;
+        text-transform: lowercase;
+        transition: all 0.3s ease;
+        &:hover {
+            color: var(--violet);
+        }
+    }
+}
