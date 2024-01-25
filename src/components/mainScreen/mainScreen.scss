@@ -1,0 +1,78 @@
+.mainScreen {
+    position: relative;
+    background: var(--black);
+    width: 100%;
+    height: calc(100vh - 12vh);
+    &__bg {
+        position: absolute;
+        width: 100%;
+        //background: var(--black);
+        background: url('../../assets/img/backgrounds/main_bg.svg') center 70px / cover no-repeat;
+        height: calc(100vh - 12vh);
+        border-radius: 40px 40px 0 0;
+    }
+    &__square {
+        position: absolute;
+        top: -1px;
+        width: 100%;
+        height: 100px;
+        border-radius: 40px;
+        //background-color: white;
+        animation: color 8s infinite linear;
+    }
+    &__visibleNone {
+        position: absolute;
+        top: 0px;
+        width: 100%;
+        height: 100px;
+        border-radius: 40px;
+        background-color: var(--black);
+    }
+    &__title {
+        font-family: 'Nekst', sans-serif;
+        font-weight: 500;
+        margin-top: 10vh;
+        width: 900px;
+        font-size: 86px;
+        line-height: 81px;
+        color: var(--white);
+        span {
+            font-weight: 300;
+            background-image: -webkit-linear-gradient(#FFFFFF, #5F29B7);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+    &__link {
+        display: flex;
+        flex-direction: column;
+        margin-top: 100px;
+        font-family: 'Nekst', sans-serif;
+        font-weight: 400;
+        font-size: 30px;
+        color: var(--white);
+        text-decoration: none;
+    }
+    &__btn {
+        cursor: pointer;
+        font-weight: 400;
+        font-size: 30px;
+        width: 350px;
+        border: none;
+        border-radius: 15px;
+        background-color: var(--violet_light);
+        color: var(--white);
+    }
+    &__icon {
+        margin-left: 20px;
+    }
+}
+
+@keyframes color {
+    0%   { background: #7641cd; }
+    20%  { background: #aea1c6; }
+    40%  { background: #B7B1C4; }
+    60%  { background: white; }
+    80%  { background: #aea1c6; }
+    100% { background: #7641cd; }
+  }

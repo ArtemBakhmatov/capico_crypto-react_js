@@ -7,10 +7,17 @@
 	padding: 0;
 }
 
+#root {
+	background-color: var(--black);
+}
 .container {
 	width: 100%;
 	margin: 0 auto;
 	padding: 0 3vw;
+	&__position {
+		position: relative;
+		height: 78vh;
+	}
 }
 
 .block {
