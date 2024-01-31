@@ -1,0 +1,85 @@
+.numbersScreen {
+    position: relative;
+    background: var(--black);
+    height: 1000px;
+    &__bg {
+        position: absolute;
+        width: 100%;
+        //background: var(--black);
+        background: url('../../assets/img/backgrounds/second_bg.svg') center 10px / cover no-repeat;
+        height: 100%;
+    }
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__title {
+        font-family: 'Nekst', sans-serif;
+        font-weight: 500;
+        font-size: 60px;
+        color: var(--white);
+    }
+    &__titleSmall {
+        font-family: 'Nekst', sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+        color: var(--909090);
+        &-mt {
+            margin-top: 145px;
+        }
+    }
+    &__numbersAnime {
+        font-family: 'Nekst', sans-serif;
+        font-weight: 300;
+        font-size: 250px;
+        color: var(--white);
+    }
+    &__numbersHolderText {
+        font-family: 'Nekst', sans-serif;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 41.2px;
+        color: var(--white);
+    }
+    &__wrapper {
+        //position: relative;
+        position: absolute;
+        top: 600px;
+        left: 45.5%;
+        display: flex;
+        &:nth-child(1) {
+            margin-right: 25px;
+        }
+    }
+    &__block {
+        &:nth-child(1) {
+            margin-right: 25px;
+        }
+        &:nth-child(2) {
+            .numbersScreen__imgBg {
+                transform: rotate(180deg);
+            }
+        }
+    }
+    &__square {
+        position: absolute;
+        top: 0px;
+        padding: 40px;
+    }
+    &__numbers {
+        font-family: 'Nekst', sans-serif;
+        font-weight: 300;
+        font-size: 80px;
+        line-height: 55px;
+        color: var(--white);
+    }
+    &__numbersInfo {
+        margin-top: 125px;
+        font-family: 'Nekst', sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 20.6px;
+        color: var(--white);
+    } 
+}

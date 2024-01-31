@@ -1,0 +1,45 @@
+.secondScreen {
+    padding-top: 90px;
+    position: relative;
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__title {
+        font-family: 'Nekst', sans-serif;
+        font-size: 70px;
+        font-weight: 300;
+        line-height: 79px;
+        //background: var(--gradient_violet);
+        //background: -webkit-linear-gradient(#FFFFFF, #5F29B7);
+        background: linear-gradient(135deg, #FFFFFF 10%, #5F29B7 90%);
+  	    -webkit-background-clip: text;
+  	    -webkit-text-fill-color: transparent;
+    }
+    &__blockImg {
+        text-align: center;
+        position: relative;
+    }
+    &__blockIcon {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 90px;
+        height: 90px;
+        border-radius: 100%;
+        background: linear-gradient(45deg, #5A2FED, #8F00FF);
+        img {
+            margin-left: 8px;
+        }
+        &:hover {
+            background-color: var(--violet_light);
+            //border-radius: 30px;
+        }
+    }
+}
